@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_Green"
+    tools:context=".ProfilStudentActivity">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/logo_profile_student"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/profile_picture"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FF000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <EditText
+            android:id="@+id/edt_bio"
+            android:layout_marginTop="10dp"
+            android:hint="Bio"
+            android:background="@drawable/textview_background"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:paddingLeft="20dp"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:drawableLeft="@drawable/icon_description"
+            android:drawablePadding="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/logo_profile_student"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+
+
+        <EditText
+            android:id="@+id/et_group"
+            android:layout_marginTop="10dp"
+            android:hint="Group"
+            android:background="@drawable/textview_background"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:paddingLeft="20dp"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:drawableLeft="@drawable/icon_group"
+            android:drawablePadding="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/edt_bio"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+        <EditText
+            android:id="@+id/et_specialization"
+            android:layout_marginTop="10dp"
+            android:hint="Specialization"
+            android:background="@drawable/textview_background"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:paddingLeft="20dp"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:drawableLeft="@drawable/icon_specialisation"
+            android:drawablePadding="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/et_group"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+        <EditText
+            android:id="@+id/et_address"
+            android:layout_marginTop="10dp"
+            android:hint="Address"
+            android:background="@drawable/textview_background"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:paddingLeft="20dp"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:drawableLeft="@drawable/icon_location"
+            android:drawablePadding="20dp"
+            app:layout_constraintTop_toBottomOf="@id/et_specialization"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/txt_upload"
+            android:layout_marginTop="10dp"
+            android:text="CV-Upload"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:drawableLeft="@drawable/icon_description"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="200dp"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            app:layout_constraintTop_toBottomOf="@+id/et_address"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:paddingLeft="20dp" />
+
+        <TextView
+            android:id="@+id/btn_update_stud"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/textview_background"
+            android:backgroundTint="@color/Dark_Green"
+            android:gravity="center"
+            android:text="Update"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:paddingLeft="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_upload"
+            />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

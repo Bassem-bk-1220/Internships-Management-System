@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_Green"
+    tools:context=".ProfilRepresentantCompanyActivity">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/logo_profile_representant_company"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/profile_picture"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FF000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <EditText
+        android:id="@+id/et_field"
+        android:layout_marginTop="10dp"
+        android:hint="Field"
+        android:background="@drawable/textview_background"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:paddingLeft="20dp"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:drawableLeft="@drawable/icon_specialisation"
+        android:drawablePadding="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/logo_profile_representant_company"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/et_description"
+        android:layout_marginTop="10dp"
+        android:hint="@string/description"
+        android:background="@drawable/textview_background"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:paddingLeft="20dp"
+        android:layout_width="0dp"
+        android:layout_height="125dp"
+        android:drawableLeft="@drawable/icon_description"
+        android:drawablePadding="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/et_field"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/btn_update_profil_representant"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/textview_background"
+        android:text="Update"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/Dark_Green"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        app:layout_constraintTop_toBottomOf="@+id/et_description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

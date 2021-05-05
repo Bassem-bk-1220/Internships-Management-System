@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_internship"
+    android:layout_margin="10dp"
+    android:background="@drawable/shape_rectangle_radius">
+
+    <TextView
+        android:id="@+id/tv_keyword"
+        android:layout_marginTop="20dp"
+        android:text="Web Developer"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginStart="10dp"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:paddingLeft="10dp" />
+
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/profile_picture"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_keyword"
+        />
+
+    <TextView
+        android:id="@+id/tv_name_company"
+        android:layout_marginTop="10dp"
+        android:text="Microsoft"
+        android:layout_marginStart="20dp"
+        android:textSize="30sp"
+        android:textStyle="italic"
+        android:textColor="@color/black"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_keyword"
+        app:layout_constraintStart_toEndOf="@id/img_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/tv_description"
+        android:layout_marginTop="10dp"
+        android:text="We are an online shop of Italian, Spanish, and Portuguese tiles, offering to choose the best materials to design an interior from more than 300 different tile brands"
+        android:gravity="center"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name_company"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+         />
+
+    <TextView
+        android:id="@+id/tv_period"
+        android:layout_marginTop="10dp"
+        android:text="3 Month"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:textStyle="italic"
+        android:textColor="@color/black"
+        android:layout_marginStart="20dp"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_description"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/tv_payment"
+        android:layout_marginTop="10dp"
+        android:text="paid"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:textStyle="italic"
+        android:textColor="@color/black"
+        android:layout_marginStart="50dp"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_description"
+        app:layout_constraintStart_toEndOf="@id/tv_period"
+        />
+
+    <TextView
+        android:id="@+id/tv_salary"
+        android:layout_marginTop="10dp"
+        android:text="Salary"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:textStyle="italic"
+        android:textColor="@color/black"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_description"
+        app:layout_constraintStart_toEndOf="@id/tv_payment"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

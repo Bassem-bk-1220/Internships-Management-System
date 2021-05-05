@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">My Application</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="occupation_array">
+        <item>Occupation</item>
+        <item>Etudiant</item>
+        <item>Mentor enseignant</item>
+        <item>Representant dentreprise</item>
+        <item>Doyen</item>
+    </string-array>
+    <string name="title_activity_main2">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_menu_student">MainActivity</string>
+    <string name="title_activity_menu_company">MainActivity</string>
+    <string name="title_activity_menu_prof">MainActivity</string>
+    <string name="description">Description</string>
+    <string name="drawer_open">Drawer Open</string>
+    <string name="drawer_close">Drawer Close</string>
+</resources>

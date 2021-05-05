@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "14074308671",
+    "firebase_url": "https://intership-management-system-default-rtdb.firebaseio.com",
+    "project_id": "intership-management-system",
+    "storage_bucket": "intership-management-system.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:14074308671:android:b0152434479676de6cf08a",
+        "android_client_info": {
+          "package_name": "com.example.intershipmanagementsystem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "14074308671-rek2ctmgj4q8fes7dqq83vnmjfqd1jol.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGehBFtvVEz0MS4lwrMOEstUbdNACXbTc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "14074308671-rek2ctmgj4q8fes7dqq83vnmjfqd1jol.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:14074308671:android:3d350a5daabc7f966cf08a",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "14074308671-rek2ctmgj4q8fes7dqq83vnmjfqd1jol.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGehBFtvVEz0MS4lwrMOEstUbdNACXbTc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "14074308671-rek2ctmgj4q8fes7dqq83vnmjfqd1jol.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
