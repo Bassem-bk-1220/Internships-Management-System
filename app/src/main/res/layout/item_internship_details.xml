@@ -4,8 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:id="@+id/item_internship_details"
     android:layout_marginTop="10dp"
     android:paddingTop="20dp"
+    android:paddingBottom="10dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@drawable/shape_rectangle_radius">
 
@@ -91,49 +93,34 @@
         />
 
     <TextView
-        android:id="@+id/tv_period"
-        android:layout_marginTop="30dp"
-        android:text="3 Month"
+        android:id="@+id/tv_company"
+        android:layout_marginTop="10dp"
+        android:text="Microsoft"
         android:gravity="center"
         android:textSize="25sp"
-        android:textStyle="italic"
         android:textColor="@color/black"
-        android:layout_marginStart="20dp"
+        android:layout_marginStart="40dp"
         android:layout_width="0dp"
+        android:drawablePadding="10dp"
         android:layout_height="match_parent"
+        android:drawableLeft="@drawable/icon_city"
         app:layout_constraintTop_toBottomOf="@+id/tv_description_req"
         app:layout_constraintStart_toStartOf="parent"
         />
 
     <TextView
-        android:id="@+id/tv_payment"
-        android:layout_marginTop="30dp"
-        android:text="paid"
+        android:id="@+id/tv_country"
+        android:layout_marginTop="10dp"
+        android:text="City"
         android:gravity="center"
         android:textSize="25sp"
-        android:textStyle="italic"
         android:textColor="@color/black"
-        android:layout_marginStart="50dp"
+        android:layout_marginEnd="40dp"
         android:layout_width="0dp"
+        android:drawablePadding="10dp"
         android:layout_height="match_parent"
+        android:drawableLeft="@drawable/icon_location"
         app:layout_constraintTop_toBottomOf="@+id/tv_description_req"
-        app:layout_constraintStart_toEndOf="@id/tv_period"
-        />
-
-    <TextView
-        android:id="@+id/tv_salary"
-        android:layout_marginTop="30dp"
-        android:text="Salary"
-        android:gravity="center"
-        android:textSize="25sp"
-        android:textStyle="italic"
-        android:textColor="@color/black"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_description_req"
-        app:layout_constraintStart_toEndOf="@id/tv_payment"
         app:layout_constraintEnd_toEndOf="parent"
         />
 
@@ -149,7 +136,7 @@
         android:layout_marginEnd="30dp"
         android:layout_width="150dp"
         android:layout_height="match_parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_salary"
+        app:layout_constraintTop_toBottomOf="@+id/tv_country"
         app:layout_constraintEnd_toEndOf="parent"
         />
 

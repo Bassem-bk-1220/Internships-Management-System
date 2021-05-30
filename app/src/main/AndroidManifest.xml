@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.myapplication">
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -9,34 +10,42 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label=""
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
-        <activity android:name=".ShowCVActivity"></activity>
-        <activity android:name=".ApplyInternshipActivity" />
-        <activity android:name=".InternshipOfTheCompanyActivity" />
-        <activity android:name=".AjouterAnnouncesInternshipActivity" />
-        <activity android:name=".UpdateProfilCompanyActivity" />
-        <activity android:name=".ProfilRepresentantCompanyActivity" />
-        <activity android:name=".ProfilStudentActivity" />
+        <activity android:name=".Activity.DetailsToSignDoyenActivity"></activity>
+        <activity android:name=".Activity.DetailToVerifyFileActivity" />
+        <activity android:name=".Activity.VerifyFilePratiqueActivity" />
+
+        <activity android:name=".Activity.FileSignatureActivity" />
+        <activity android:name=".Activity.DetailOffreActivity" />
+        <activity android:name=".Activity.DetailsNotificationActivity" />
+        <activity android:name=".Activity.DetailsInternshipActivity" />
+        <activity android:name=".Activity.ShowCVActivity" />
+        <activity android:name=".Activity.ApplyInternshipActivity" />
+        <activity android:name=".Activity.InternshipOfTheCompanyActivity" />
+        <activity android:name=".Activity.AjouterAnnouncesInternshipActivity" />
+        <activity android:name=".Activity.UpdateProfilCompanyActivity" />
+        <activity android:name=".Activity.ProfilRepresentantCompanyActivity" />
+        <activity android:name=".Activity.ProfilStudentActivity" />
         <activity
-            android:name=".MenuProfActivity"
+            android:name=".Activity.MenuProfActivity"
             android:label="@string/title_activity_menu_prof" />
         <activity
-            android:name=".MenuCompanyActivity"
+            android:name=".Activity.MenuCompanyActivity"
             android:label="@string/title_activity_menu_company" />
         <activity
-            android:name=".MenuStudentActivity"
+            android:name=".Activity.MenuStudentActivity"
             android:label="@string/title_activity_menu_student" />
         <activity
-            android:name=".MenuDoyenActivity"
+            android:name=".Activity.MenuDoyenActivity"
             android:label="MenuDoyenActivity" />
-        <activity android:name=".RegisterActivity" />
-        <activity android:name=".ForgotPasswordActivity" />
-        <activity android:name=".MainAppActivity" />
-        <activity android:name=".LoginDoyenActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".Activity.RegisterActivity" />
+        <activity android:name=".Activity.ForgotPasswordActivity" />
+        <activity android:name=".Activity.MainAppActivity" />
+        <activity android:name=".Activity.LoginActivity" />
+
+        <activity android:name=".Activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

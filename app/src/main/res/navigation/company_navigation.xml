@@ -7,25 +7,20 @@
 
     <fragment
         android:id="@+id/navigation_profil_company"
-        android:name="com.example.myapplication.ProfilRepresentantCompanyFragment"
+        android:name="com.example.myapplication.Fragment.ProfilRepresentantCompanyFragment"
         android:label="ProfilRepresentant"
         tools:layout="@layout/fragment_profil_company_representant" />
 
     <fragment
         android:id="@+id/navigation_internship_announcement"
-        android:name="com.example.myapplication.ProfilCompanyFragment"
+        android:name="com.example.myapplication.Fragment.ProfilCompanyFragment"
         android:label="ProfilCompany"
         tools:layout="@layout/fragment_profil_company" />
 
     <fragment
         android:id="@+id/navigation_notifications"
-        android:name="com.example.myapplication.NotificationFragment"
+        android:name="com.example.myapplication.Fragment.NotificationFragment"
         android:label="Signature"
         tools:layout="@layout/fragment_signature" />
 
-    <fragment
-        android:id="@+id/navigation_signature"
-        android:name="com.example.myapplication.SignatureFragment"
-        android:label="Signature"
-        tools:layout="@layout/fragment_signature" />
 </navigation>

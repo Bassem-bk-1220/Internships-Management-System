@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/light_Green"
-    tools:context=".UpdateProfilCompanyActivity">
+    tools:context=".Activity.UpdateProfilCompanyActivity">
 
     <de.hdodenhof.circleimageview.CircleImageView
         xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -38,6 +38,23 @@
         />
 
     <EditText
+        android:id="@+id/et_email_company"
+        android:layout_marginTop="10dp"
+        android:hint="Email"
+        android:background="@drawable/textview_background"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:paddingLeft="20dp"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:drawableLeft="@drawable/ic_email"
+        android:drawablePadding="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/et_company_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <EditText
         android:id="@+id/et_address"
         android:layout_marginTop="10dp"
         android:hint="Address"
@@ -49,10 +66,11 @@
         android:layout_height="50dp"
         android:drawableLeft="@drawable/icon_location"
         android:drawablePadding="20dp"
-        app:layout_constraintTop_toBottomOf="@+id/et_company_name"
+        app:layout_constraintTop_toBottomOf="@+id/et_email_company"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         />
+
     <EditText
         android:id="@+id/et_field"
         android:layout_marginTop="10dp"

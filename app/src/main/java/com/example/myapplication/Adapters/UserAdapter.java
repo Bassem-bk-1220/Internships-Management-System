@@ -1,7 +1,6 @@
 package com.example.myapplication.Adapters;
 
 import android.content.Context;
-import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,7 +9,8 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.myapplication.R;
-import com.example.myapplication.User;
+import com.example.myapplication.Modele.User;
+import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
@@ -32,6 +32,11 @@ public class UserAdapter extends RecyclerView.Adapter<UserViewHolder> {
     public void onBindViewHolder(@NonNull UserViewHolder holder, int position) {
        User person=userList.get(position);
         holder.name_user.setText(person.getFname());
+        if(person.getUploadimage()!=null) {
+            Picasso.get().load(person.getUploadimage()).into(holder.logo);
+        }else{
+            holder.logo.setImageResource(R.drawable.profile_picture);
+        }
 
     }
 

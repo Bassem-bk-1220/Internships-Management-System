@@ -5,25 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/light_Green"
-    tools:context=".AjouterAnnouncesInternshipActivity">
+    tools:context=".Activity.AjouterAnnouncesInternshipActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <ImageView
-            android:id="@+id/logo_company"
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:layout_marginTop="20dp"
-            android:src="@drawable/profile_picture"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"/>
 
         <EditText
             android:id="@+id/et_key_word"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="60dp"
             android:hint="KeyWord"
             android:background="@drawable/textview_background"
             android:layout_marginLeft="20dp"
@@ -33,27 +24,11 @@
             android:layout_height="50dp"
             android:drawableLeft="@drawable/icon_search"
             android:drawablePadding="20dp"
-            app:layout_constraintTop_toBottomOf="@+id/logo_company"
+            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             />
 
-        <EditText
-            android:id="@+id/et_name_company"
-            android:layout_marginTop="10dp"
-            android:hint="Name of Company"
-            android:background="@drawable/textview_background"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:paddingLeft="20dp"
-            android:layout_width="0dp"
-            android:layout_height="50dp"
-            android:drawableLeft="@drawable/icon_user"
-            android:drawablePadding="20dp"
-            app:layout_constraintTop_toBottomOf="@+id/et_key_word"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            />
 
         <EditText
             android:id="@+id/et_period"
@@ -67,7 +42,7 @@
             android:layout_height="50dp"
             android:drawableLeft="@drawable/icon_calendar"
             android:drawablePadding="20dp"
-            app:layout_constraintTop_toBottomOf="@+id/et_name_company"
+            app:layout_constraintTop_toBottomOf="@+id/et_key_word"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             />

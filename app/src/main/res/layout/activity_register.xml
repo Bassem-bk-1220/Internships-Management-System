@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/light_Green"
-    tools:context=".RegisterActivity">
+    tools:context=".Activity.RegisterActivity">
     <EditText
         android:id="@+id/et_fullname"
         android:layout_marginTop="60dp"
@@ -27,6 +27,7 @@
         android:id="@+id/et_email"
         android:layout_marginTop="30dp"
         android:hint="Email"
+        android:inputType="textEmailAddress"
         android:background="@drawable/textview_background"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
@@ -70,6 +71,7 @@
         android:id="@+id/edt_phone"
         android:layout_marginTop="30dp"
         android:hint="Phone"
+        android:inputType="phone"
         android:background="@drawable/textview_background"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"

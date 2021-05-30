@@ -5,45 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/light_Green"
-    tools:context=".ApplyInternshipActivity">
+    tools:context=".Activity.ApplyInternshipActivity">
 
-    <EditText
-        android:id="@+id/editxt_name"
-        android:layout_marginTop="40dp"
-        android:hint="FullName"
-        android:background="@drawable/textview_background"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:paddingLeft="20dp"
-        android:layout_width="0dp"
-        android:layout_height="50dp"
-        android:drawableLeft="@drawable/icon_user"
-        android:drawablePadding="20dp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        />
 
-    <EditText
-        android:id="@+id/editxt_address"
-        android:layout_marginTop="10dp"
-        android:hint="Address"
-        android:background="@drawable/textview_background"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:paddingLeft="20dp"
-        android:layout_width="0dp"
-        android:layout_height="50dp"
-        android:drawableLeft="@drawable/icon_location"
-        android:drawablePadding="20dp"
-        app:layout_constraintTop_toBottomOf="@id/editxt_name"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        />
+
+
 
     <EditText
         android:id="@+id/editxt_country"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="30dp"
         android:hint="Country"
         android:background="@drawable/textview_background"
         android:layout_marginLeft="20dp"
@@ -53,41 +23,7 @@
         android:layout_height="50dp"
         android:drawableLeft="@drawable/icon_city"
         android:drawablePadding="20dp"
-        app:layout_constraintTop_toBottomOf="@id/editxt_address"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        />
-
-    <EditText
-        android:id="@+id/editxt_email"
-        android:layout_marginTop="10dp"
-        android:hint="Email"
-        android:background="@drawable/textview_background"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:paddingLeft="20dp"
-        android:layout_width="0dp"
-        android:layout_height="50dp"
-        android:drawableLeft="@drawable/ic_email"
-        android:drawablePadding="20dp"
-        app:layout_constraintTop_toBottomOf="@id/editxt_country"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        />
-
-    <EditText
-        android:id="@+id/editxt_phone"
-        android:layout_marginTop="10dp"
-        android:hint="Phone"
-        android:background="@drawable/textview_background"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:paddingLeft="20dp"
-        android:layout_width="0dp"
-        android:layout_height="50dp"
-        android:drawableLeft="@drawable/ic_phone"
-        android:drawablePadding="20dp"
-        app:layout_constraintTop_toBottomOf="@id/editxt_email"
+       app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         />
@@ -103,7 +39,7 @@
         android:layout_marginRight="200dp"
         android:layout_width="0dp"
         android:layout_height="50dp"
-        app:layout_constraintTop_toBottomOf="@+id/editxt_phone"
+        app:layout_constraintTop_toBottomOf="@+id/editxt_country"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:paddingLeft="20dp" />

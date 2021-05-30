@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_offre"
+    android:paddingTop="20dp"
+    android:paddingBottom="10dp"
+    android:background="@drawable/shape_rectangle_radius">
+
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/profile_picture"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_keyword"
+        />
+
+    <TextView
+        android:id="@+id/tv_name_company"
+        android:layout_marginTop="10dp"
+        android:text=" Company"
+        android:textStyle="bold"
+        android:layout_marginStart="10dp"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_keyword"
+        app:layout_constraintStart_toEndOf="@id/img_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/tv_name_offre"
+        android:layout_marginTop="10dp"
+        android:text="Developer"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        android:layout_marginStart="10dp"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name_company"
+        app:layout_constraintStart_toEndOf="@id/img_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/tv_see_more"
+        android:layout_marginTop="20dp"
+        android:text="See more"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:layout_marginEnd="30dp"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name_offre"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

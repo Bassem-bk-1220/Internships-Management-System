@@ -5,18 +5,28 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/light_Green"
-    tools:context=".SearchFragment">
+    tools:context=".Fragment.SearchFragment">
 
+    <ImageView
+        android:id="@+id/imgv_logout"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/icon_logout"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
 
     <EditText
-        android:id="@+id/et_keyword"
-        android:layout_marginTop="60dp"
+        android:id="@+id/et_keyword_search"
+        android:layout_marginTop="90dp"
         android:hint="Key Word"
         android:background="@drawable/textview_background"
         android:layout_marginStart="10dp"
         android:paddingLeft="20dp"
-        android:layout_width="200dp"
-        android:layout_height="50dp"
+        android:layout_width="170dp"
+        android:layout_height="45dp"
         android:drawableLeft="@drawable/icon_search"
         android:drawablePadding="20dp"
         app:layout_constraintTop_toTopOf="parent"
@@ -24,32 +34,30 @@
         />
 
 
-
     <EditText
-        android:id="@+id/et_payment"
-        android:layout_marginTop="60dp"
-        android:background="@drawable/textview_background"
+        android:id="@+id/et_payment_filter"
+        android:layout_width="210dp"
+        android:layout_height="45dp"
         android:layout_marginStart="10dp"
-        android:paddingLeft="20dp"
-        android:layout_width="200dp"
-        android:layout_height="50dp"
+        android:layout_marginTop="90dp"
+        android:background="@drawable/textview_background"
         android:drawableLeft="@drawable/icon_money"
         android:drawablePadding="20dp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toEndOf="@id/et_keyword"
-        />
+        android:paddingLeft="20dp"
+        app:layout_constraintStart_toEndOf="@id/et_keyword_search"
+        app:layout_constraintTop_toTopOf="parent" />
+
 
     <Spinner
         android:id="@+id/spinner_pay"
-        android:layout_width="0dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="60dp"
+        android:layout_width="146dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="90dp"
         android:gravity="center"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@id/et_payment"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@id/et_payment_filter"
         app:layout_constraintTop_toTopOf="parent" />
-
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycle_search"
@@ -57,10 +65,12 @@
         android:layout_height="0dp"
         android:layout_marginTop="10dp"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintTop_toBottomOf="@+id/et_payment_filter"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="60dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        tools:listitem="@layout/item_internships"
+        tools:listitem="@layout/item_list_internships"
         tools:itemCount="2"
         />
 
