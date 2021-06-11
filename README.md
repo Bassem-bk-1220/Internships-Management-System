@@ -10,13 +10,16 @@ Différents rôles, login correspondant pour chacun: représentant de l'entrepri
 -publier des annonces de stage (par mots-clés, période, description, salaire - peut être vide, s'il s'agit d'un stage non rémunéré);
 -vérifier les candidats pour un stage et accepter / rejeter les candidats;
 -signer la convention-cadre de pratique (mécanisme de simulation);
+
      * L'étudiant peut:
 -se connecter (login) / se déconnecter (logout) / récupérer le mot de passe;
 -mettre à jour le profil (nom, groupe, spécialisation, CV-upload);
 -rechercher un stage selon divers critères (par mots-clés, s'ils soient payés ou non, par domaine);
 -postuler pour un stage;
 -signer la convention-cadre de pratique (mécanisme de simulation);
+
      * Mentor-enseignant FILS peut se connecter (login) / se déconnecter (logout) / récupérer le mot de passe, valider et signer l'accord-cadre de pratique (mécanisme de simulation);
+    
 ·    * Doyen de FILS/ admin a les droits suivants:
 -login/logout, créer des comptes pour les enseignants, les étudiants et les représentants d'entreprise (id – email, mot de passe); le compte va être envoyé par email;
 -visualiser la liste des enseignants pour vérifier l'état des conventions, la liste des entreprises, la liste des enseignants;
